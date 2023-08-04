@@ -1,9 +1,9 @@
-sudo apt install -y nodejs npm
+sudo $MY_PACKAGE install -y nodejs npm
 node -v
 npm -v
 
 # curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-# sudo apt-get install -y nodejs
+# sudo $MY_PACKAGE install -y nodejs
 # node -v
 # sudo npm install -g npm@latest
 # npm -v

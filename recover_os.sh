@@ -28,3 +28,10 @@ sh languages/ruby.sh
 
 # Install Shell
 sh config/zsh.sh
+
+# Recovery Workspaces
+git clone git@github.com:tungeverest/workspaces.git
+git checkout develop
+
+# Backups Token, data, vaults to your device or Storage service folder to sync.
+cp -rf $HOME/.ssh MegaSync/backup_os

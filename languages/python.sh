@@ -1,4 +1,4 @@
-sudo apt install -y python-is-python3 python3-pip
+sudo $MY_PACKAGE install -y python-is-python3 python3-pip
 # python3 -m pip install --upgrade pip
 curl https://pyenv.run | bash
 pyenv --version

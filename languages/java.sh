@@ -1,5 +1,5 @@
 # https://www.oracle.com/java/technologies/downloads/
-sudo apt install default-jre
+sudo $MY_PACKAGE install default-jre
 java -version
-sudo apt install default-jdk
+sudo $MY_PACKAGE install default-jdk
 javac -version

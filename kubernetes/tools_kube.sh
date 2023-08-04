@@ -6,10 +6,10 @@ chmod 700 get_helm.sh
 /get_helm.sh
 
 # curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
-# sudo apt-get install apt-transport-https --yes
+# sudo $MY_PACKAGE install apt-transport-https --yes
 # echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
-# sudo apt-get update
-# sudo apt-get install helm
+# sudo $MY_PACKAGE update
+# sudo $MY_PACKAGE install helm
 
 # Skaffold
 curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/latest/skaffold-linux-amd64 && \

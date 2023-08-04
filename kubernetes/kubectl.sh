@@ -6,7 +6,7 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 # curl -LO https://dl.k8s.io/release/v1.27.2/bin/linux/amd64/kubectl
 echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-# sudo apt-get install -y kubectx
+# sudo $MY_PACKAGE install -y kubectx
 
 # chmod +x kubectl
 # mkdir -p ~/.local/bin
@@ -19,7 +19,8 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
 # sudo curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
 # echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
-# sudo apt-get update
-# sudo apt-get install -y kubectl kubectx
+# sudo $MY_PACKAGE update
+# sudo $MY_PACKAGE install -y kubectl kubectx
 # kubectl version --client
+kubectl version --client --output=yaml
 kubectl version --client --output=yaml

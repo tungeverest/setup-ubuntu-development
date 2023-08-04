@@ -10,7 +10,7 @@ sudo ./aws/install
 # https://cloud.google.com/sdk/docs/install#deb
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
-sudo apt-get update && sudo apt-get install google-cloud-cli
+sudo $MY_PACKAGE update && sudo $MY_PACKAGE install google-cloud-cli
 gcloud init
 
 # AZURE
@@ -28,8 +28,8 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 # echo "deb [arch=`dpkg --print-architecture` signed-by=/etc/apt/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" |
 #     sudo tee /etc/apt/sources.list.d/azure-cli.list
 
-# sudo apt-get update
-# sudo apt-get install azure-cli
+# sudo $MY_PACKAGE update
+# sudo $MY_PACKAGE install azure-cli
 
 # HEROKU
 # https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli

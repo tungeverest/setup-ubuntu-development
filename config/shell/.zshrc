@@ -6,6 +6,17 @@ export ZIM_HOME=~/.zim
 export ZIM_CONFIG_FILE=~/.zimrc
 export PVENV_HOME=~/pyenv
 
+# BASH
+# Nạp các file cấu hình của Bash
+if [[ -f ~/.bash_profile ]]; then
+    source ~/.bash_profile
+fi
+
+if [[ -f ~/.bashrc ]]; then
+    source ~/.bashrc
+fi
+
+
 # PyEnv
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
@@ -21,6 +32,10 @@ export GOROOT="/home/$USER/go"
 export GOPATH="/home/$USER/go/packages"
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export GOROOT_BOOTSTRAP=$GOROOT
+
+# DENO
+export DENO_INSTALL="/home/tttung/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 
 # -----------------

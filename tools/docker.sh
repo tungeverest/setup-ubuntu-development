@@ -7,8 +7,8 @@
 #   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
 #   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-# sudo apt-get update
-# sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+# sudo $MY_PACKAGE update
+# sudo $MY_PACKAGE install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # Install using the convenience script
 # https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04#step-4-working-with-docker-images
@@ -31,6 +31,6 @@ docker info
 # Nó giúp tránh các thay đổi không mong muốn và cung cấp cho bạn cơ hội xem xét và xác nhận các thay đổi trước khi thực hiện chúng.
 
 # Uninstall
-# sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
+# sudo $MY_PACKAGE purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
 # sudo rm -rf /var/lib/docker
 # sudo rm -rf /var/lib/containerd

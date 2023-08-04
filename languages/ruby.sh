@@ -1,2 +1,2 @@
 # https://phoenixnap.com/kb/install-ruby-ubuntu
-sudo apt-get install -y ruby-full
+sudo $MY_PACKAGE install -y ruby-full

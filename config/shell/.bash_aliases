@@ -41,9 +41,8 @@ alias ..='cd ..'
 alias .2='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../..'
-alias .h='cd ~'
-alias ./='cd /'
-alias c='clear'
+alias home='cd ~'
+alias cc='clear'
 
 # List All Process
 alias aps="ps -aux"
@@ -93,6 +92,7 @@ alias dpsa='docker ps -a'
 alias dim='docker image ls'
 alias dima='docker image ls -a'
 alias dimrm='docker image rm'
+alias docker-compose='docker compose'
 
 # KUBE
 alias k="kubectl"

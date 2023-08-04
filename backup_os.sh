@@ -1,20 +1,33 @@
 #!bin/sh
-cp -rf $HOME/.gitconfig config/shell
+
+# Backup Shell Config
 cp -rf $HOME/.profile config/shell
 cp -rf $HOME/.bashrc config/shell
-cp -rf $HOME/.zshrc config/shell
-cp -rf $HOME/.zimrc config/shell
 cp -rf $HOME/.bash_aliases config/shell
 cp -rf $HOME/.bash_functions config/shell
-cp -rf $HOME/.profile config/shell
+cp -rf $HOME/.bash_history config/shell
+
+cp -rf $HOME/.zshrc config/shell
+cp -rf $HOME/.zimrc config/shell
+cp -rf $HOME/.zsh_history config/shell
+
+# Git
+cp -rf $HOME/.gitconfig config/shell
+
+# Backups SSH, Token, data, vaults to your device or Cloud Storage service to sync.
+cp -rf $HOME/.ssh MegaSync/Backup_OS
 
 
-# git checkout develop
-# git add .
-# git commit -m "Backup OS $(now)"
-# git push
+# Backup OS Repo
+git checkout develop
+git add .
+git commit -m "Backup OS $(now)"
+git push
 
 
-# Backups Token, data, vaults to your device or Storage service folder to sync.
-# cp $HOME/.ssh $1
-# copy $HOME/Vaults/* $1
+# Backup Workspaces Repo
+cd $HOME/Workspaces
+git checkout develop
+git add .
+git commit -m "Backup OS $(now)"
+git push

@@ -4,7 +4,7 @@
 # https://github.com/zimfw/zimfw
 # https://github.com/ogham/exa
 # https://github.com/powerline/fonts/blob/master/README.rst#installation
-sudo apt-get -y install zsh exa zoxide fonts-powerline
+sudo $MY_PACKAGE -y install zsh exa zoxide fonts-powerline
 which zsh
 zsh --version
 
